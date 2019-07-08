@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a636fc50-5219-414b-b1ce-5fa0d3d208ea" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="edit-catalog-product.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/edit-catalog-product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="1125" column="127" lean-forward="false" selection-start-line="1125" selection-start-column="127" selection-end-line="1125" selection-end-column="127" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>scrollable</find>
+      <find>fsel</find>
+      <find>fSel</find>
+      <find>data</find>
+      <find>filter</find>
+      <find>datatable-tipe-toko</find>
+      <find>textare</find>
+      <find>datat</find>
+      <find>promo im</find>
+      <find>dropzone_multiple</find>
+      <find>descri</find>
+      <find>id=&quot;summernote</find>
+      <find>note-icon-questionfa fa-question</find>
+      <find>note-icon-question</find>
+      <find>note-icon-arrows-alt</find>
+      <find>note-icon-video</find>
+      <find>note-icon-picture</find>
+      <find>note-icon-link</find>
+      <find>note-icon-caret</find>
+      <find>note-icon-table</find>
+      <find>note-icon-orderedlist</find>
+      <find>note-icon-unorderedlist</find>
+      <find>note-icon-font</find>
+      <find>note-icon-eraser</find>
+      <find>note-icon-underline</find>
+      <find>note-icon-bold</find>
+      <find>note-icon-magic</find>
+      <find>fa-ma</find>
+      <find>note-icon-code</find>
+      <find>price</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Detail</replace>
+      <replace>&lt;a href=&quot;detail-master.html&quot;&gt;Detail&lt;/a&gt;</replace>
+      <replace>&lt;a href=&quot;master-fc.html&quot;&gt;&lt;i class=&quot;icon-arrow-left8 mr-20&quot;&gt;&lt;/i&gt;&lt;/a&gt;</replace>
+      <replace>&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;store-fc-detail.html&quot;&gt;Detail&lt;/a&gt;&lt;/td&gt;</replace>
+      <replace>datatable-tipe-toko</replace>
+      <replace>datatable-group</replace>
+      <replace>&lt;i class=&quot;icon-list3&quot;&gt;&lt;/i&gt; Catalog Product</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/assets/js/pages</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/js/pages/datatables_extension_fixed_columns.js" />
+        <option value="$PROJECT_DIR$/master-detail-fc.html" />
+        <option value="$PROJECT_DIR$/product-mapping-detail.html" />
+        <option value="$PROJECT_DIR$/product-mapping-add-detail.html" />
+        <option value="$PROJECT_DIR$/assets/js/pages/uploader_dropzone.js" />
+        <option value="$PROJECT_DIR$/product-mapping.html" />
+        <option value="$PROJECT_DIR$/master-fc-add.html" />
+        <option value="$PROJECT_DIR$/master-fc.html" />
+        <option value="$PROJECT_DIR$/detail-master.html" />
+        <option value="$PROJECT_DIR$/coverage-area.html" />
+        <option value="$PROJECT_DIR$/coverage-detail.html" />
+        <option value="$PROJECT_DIR$/store-fc.html" />
+        <option value="$PROJECT_DIR$/store-fc-detail.html" />
+        <option value="$PROJECT_DIR$/product-mapping-upload.html" />
+        <option value="$PROJECT_DIR$/assets/css/fSelect.css" />
+        <option value="$PROJECT_DIR$/assets/js/plugins/fSelect/fSelect.js" />
+        <option value="$PROJECT_DIR$/tipe-toko-ho2.html" />
+        <option value="$PROJECT_DIR$/assets/js/coba.js" />
+        <option value="$PROJECT_DIR$/add-group-custom.html" />
+        <option value="$PROJECT_DIR$/group-custom.html" />
+        <option value="$PROJECT_DIR$/tipe-toko-firstman.html" />
+        <option value="$PROJECT_DIR$/cfdg.html" />
+        <option value="$PROJECT_DIR$/catalog-product.html" />
+        <option value="$PROJECT_DIR$/tipe-toko-ho.html" />
+        <option value="$PROJECT_DIR$/summernote/summernote.css" />
+        <option value="$PROJECT_DIR$/summernote/summernote.js" />
+        <option value="$PROJECT_DIR$/edit-catalog-product.html" />
+        <option value="$PROJECT_DIR$/tes.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2048" />
+    <option name="height" value="1065" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bo-alfamikro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bo-alfamikro" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="bo-alfamikro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bo-alfamikro" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="summernote" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a636fc50-5219-414b-b1ce-5fa0d3d208ea" name="Default" comment="" />
+      <created>1533105258519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533105258519</updated>
+      <workItem from="1533105259963" duration="11820000" />
+      <workItem from="1533197720239" duration="6514000" />
+      <workItem from="1533265375051" duration="6093000" />
+      <workItem from="1533526115234" duration="8067000" />
+      <workItem from="1533540265546" duration="3215000" />
+      <workItem from="1533608870948" duration="5809000" />
+      <workItem from="1556866023044" duration="5504000" />
+      <workItem from="1557118774839" duration="6866000" />
+      <workItem from="1557204125640" duration="4419000" />
+      <workItem from="1557235623422" duration="498000" />
+      <workItem from="1557281682680" duration="5380000" />
+      <workItem from="1557366873653" duration="3940000" />
+      <workItem from="1557404348706" duration="1511000" />
+      <workItem from="1557455091499" duration="5313000" />
+      <workItem from="1557715689019" duration="11215000" />
+      <workItem from="1557799765508" duration="5107000" />
+      <workItem from="1557890145254" duration="2575000" />
+      <workItem from="1557973830530" duration="4775000" />
+      <workItem from="1558065127772" duration="1796000" />
+      <workItem from="1558320207674" duration="2531000" />
+      <workItem from="1558411695909" duration="40000" />
+      <workItem from="1558670022818" duration="2461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="105449000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2048" height="1065" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18045862" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho2.html" />
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7296">
+          <caret line="456" column="62" lean-forward="false" selection-start-line="456" selection-start-column="62" selection-end-line="456" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-firstman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7312">
+          <caret line="457" column="41" lean-forward="false" selection-start-line="457" selection-start-column="41" selection-end-line="457" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8560">
+          <caret line="535" column="56" lean-forward="false" selection-start-line="535" selection-start-column="56" selection-end-line="535" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="456" column="62" lean-forward="false" selection-start-line="456" selection-start-column="62" selection-end-line="456" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-firstman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7312">
+          <caret line="457" column="41" lean-forward="false" selection-start-line="457" selection-start-column="41" selection-end-line="457" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3328">
+          <caret line="535" column="56" lean-forward="false" selection-start-line="535" selection-start-column="56" selection-end-line="535" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-firstman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8128">
+          <caret line="508" column="82" lean-forward="false" selection-start-line="508" selection-start-column="82" selection-end-line="508" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-mapping-upload.html" />
+    <entry file="file://$PROJECT_DIR$/product-mapping-upload.html" />
+    <entry file="file://$PROJECT_DIR$/product-mapping-upload.html" />
+    <entry file="file://$PROJECT_DIR$/product-mapping-detail.html" />
+    <entry file="file://$PROJECT_DIR$/store-fc.html" />
+    <entry file="file://$PROJECT_DIR$/detail-master.html" />
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="878" column="32" lean-forward="true" selection-start-line="463" selection-start-column="24" selection-end-line="878" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master-fc-add.html" />
+    <entry file="file://$PROJECT_DIR$/assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="230" lean-forward="false" selection-start-line="24" selection-start-column="230" selection-end-line="24" selection-end-column="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/plugins/tables/datatables/datatables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="206" lean-forward="false" selection-start-line="7" selection-start-column="199" selection-end-line="7" selection-end-column="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/datatables_extension_fixed_header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1045">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/datatables_api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="91" column="43" lean-forward="false" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/datatables_extension_fixed_columns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="185" column="42" lean-forward="false" selection-start-line="185" selection-start-column="42" selection-end-line="185" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-mapping-detail.html" />
+    <entry file="file://$PROJECT_DIR$/product-mapping-add-detail.html" />
+    <entry file="file://$PROJECT_DIR$/assets/js/pages/uploader_dropzone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-mapping.html" />
+    <entry file="file://$PROJECT_DIR$/master-fc-add.html" />
+    <entry file="file://$PROJECT_DIR$/detail-master.html" />
+    <entry file="file://$PROJECT_DIR$/coverage-area.html" />
+    <entry file="file://$PROJECT_DIR$/coverage-detail.html" />
+    <entry file="file://$PROJECT_DIR$/store-fc.html" />
+    <entry file="file://$PROJECT_DIR$/store-fc-detail.html" />
+    <entry file="file://$PROJECT_DIR$/product-mapping-upload.html" />
+    <entry file="file://$PROJECT_DIR$/assets/js/plugins/fSelect/fSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="377" column="11" lean-forward="false" selection-start-line="377" selection-start-column="11" selection-end-line="377" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="499" column="16" lean-forward="true" selection-start-line="499" selection-start-column="16" selection-end-line="499" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/core/_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/coba.js" />
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho2.html" />
+    <entry file="file://$PROJECT_DIR$/master-fc.html" />
+    <entry file="file://$PROJECT_DIR$/add-group-custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="397" column="127" lean-forward="true" selection-start-line="397" selection-start-column="127" selection-end-line="397" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="398" column="127" lean-forward="false" selection-start-line="398" selection-start-column="127" selection-end-line="398" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-firstman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="394" column="127" lean-forward="false" selection-start-line="394" selection-start-column="127" selection-end-line="394" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fSelect.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="136" column="1" lean-forward="false" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfdg.html" />
+    <entry file="file://$PROJECT_DIR$/catalog-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipe-toko-ho.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="997" column="11" lean-forward="true" selection-start-line="997" selection-start-column="11" selection-end-line="997" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summernote/summernote.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18395" lean-forward="false" selection-start-line="0" selection-start-column="18395" selection-end-line="0" selection-end-column="18395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summernote/summernote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="7532" column="53" lean-forward="true" selection-start-line="7532" selection-start-column="53" selection-end-line="7532" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tes.js" />
+    <entry file="file://$PROJECT_DIR$/edit-catalog-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1125" column="127" lean-forward="false" selection-start-line="1125" selection-start-column="127" selection-end-line="1125" selection-end-column="127" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#6;n#fieldset#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

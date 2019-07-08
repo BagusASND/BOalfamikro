@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Catalog Product - Edit</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/fSelect.css" rel="stylesheet">
+	<link href="assets/css/custom/main.css" rel="stylesheet">
+	<link href="summernote/summernote.css" rel="stylesheet">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/notifications/pnotify.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/uploaders/dropzone.min.js"></script>
+
+
+	<script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/anytime.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/datatables_extension_fixed_columns.js"></script>
+	<script type="text/javascript" src="assets/js/pages/form_multiselect.js"></script>
+	<script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
+	<script type="text/javascript" src="assets/js/pages/uploader_dropzone.js"></script>
+	<script src="summernote/summernote.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/fSelect/fSelect.js"></script>
+	<!-- /theme JS files -->
+
+
+	<style>
+		.datatable-header .dataTables_filter {
+			display: none;
+		}
+
+		.tb-filter table tr td {
+			padding: 12px 5px;
+		}
+
+		.fs-wrap {
+			width: 100%;
+		}
+
+		.fs-wrap .fs-label-wrap {
+			border: none;
+			border-bottom: solid 1px #dddddd;
+			padding: 8px 16px 8px 0px;
+		}
+
+		.fs-wrap .fs-label-wrap .fs-label {
+			padding: 5px 22px 4px 0px;
+		}
+
+		.fs-wrap .fs-option {
+			padding: 12px 8px;
+		}
+
+		.fs-wrap .fs-search {
+			padding: 10px 4px;
+		}
+
+		.tb-filter.scrollable table tr td {
+			min-width: 150px;
+		}
+
+		.tb-filter.scrollable table tr td.sticky-col {
+			position: absolute;
+			right: 10px;
+		}
+
+		.tb-filter.scrollable table tr td table tr td:last-child {
+			position: unset;
+		}
+
+		.tb-filter.scrollable {
+			margin-right: 150px;
+		}
+
+		.tb-filter.scrollable table tr:first-child td {
+			vertical-align: top;
+			padding-bottom: 0;
+		}
+
+		.tb-filter.scrollable table tr:last-child td {
+			border: none;
+			padding-top: 0;
+		}
+
+		.primary-tab .nav-tabs li a {
+			text-transform: none;
+		}
+
+		.primary-tab .nav-tabs li.active a {
+			color: #2196F3;
+			border: none;
+			border-bottom: solid 3px #2196F3;
+		}
+
+		.multisell-tabs li a {
+			border: solid 1px #dddddd;
+		}
+
+		.multisell-tabs li.active a {
+			background-color: #2196F3;
+			color: #ffffff !important;
+			border: solid 1px #2196F3 !important;
+		}
+
+		.multisell-tabs li.active a:focus {
+			background-color: #2196F3;
+			color: #ffffff !important;
+			border: solid 1px #2196F3 !important;
+		}
+
+		.image-option img {
+			width: 115px;
+			padding: 5px;
+			border: solid 1px #dddddd;
+		}
+
+		.image-option .form-control {
+			display: unset;
+			width: 170px;
+		}
+
+		.image-option p {
+			position: relative;
+			width: 170px;
+			margin: 0 10px;
+			height: 115px;
+			display: inline-block;
+		}
+
+		.image-option input[type=radio] {
+			margin-top: 49px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse bg-indigo">2
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-puzzle3"></i>
+						<span class="visible-xs-inline-block position-right">Git updates</span>
+						<span class="status-mark border-orange-400"></span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content">
+						<div class="dropdown-content-heading">
+							Git updates
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-sync"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body width-350">
+							<li class="media">
+								<div class="media-left">
+									<a href="#"
+										class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i
+											class="icon-git-pull-request"></i></a>
+								</div>
+
+								<div class="media-body">
+									Drop the IE <a href="#">specific hacks</a> for temporal inputs
+									<div class="media-annotation">4 minutes ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#"
+										class="btn border-warning text-warning btn-flat btn-rounded btn-icon btn-sm"><i
+											class="icon-git-commit"></i></a>
+								</div>
+
+								<div class="media-body">
+									Add full font overrides for popovers and tooltips
+									<div class="media-annotation">36 minutes ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#"
+										class="btn border-info text-info btn-flat btn-rounded btn-icon btn-sm"><i
+											class="icon-git-branch"></i></a>
+								</div>
+
+								<div class="media-body">
+									<a href="#">Chris Arney</a> created a new <span class="text-semibold">Design</span>
+									branch
+									<div class="media-annotation">2 hours ago</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#"
+										class="btn border-success text-success btn-flat btn-rounded btn-icon btn-sm"><i
+											class="icon-git-merge"></i></a>
+								</div>
+
+								<div class="media-body">
+									<a href="#">Eugene Kopyov</a> merged <span class="text-semibold">Master</span> and
+									<span class="text-semibold">Dev</span> branches
+									<div class="media-annotation">Dec 18, 18:36</div>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<a href="#"
+										class="btn border-primary text-primary btn-flat btn-rounded btn-icon btn-sm"><i
+											class="icon-git-pull-request"></i></a>
+								</div>
+
+								<div class="media-body">
+									Have Carousel ignore keyboard events
+									<div class="media-annotation">Dec 12, 05:46</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="All activity"><i
+									class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="navbar-right">
+				<p class="navbar-text">Morning, Victoria!</p>
+				<p class="navbar-text"><span class="label bg-success-400">Online</span></p>
+
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-bell2"></i>
+							<span class="visible-xs-inline-block position-right">Activity</span>
+							<span class="status-mark border-orange-400"></span>
+						</a>
+
+						<div class="dropdown-menu dropdown-content">
+							<div class="dropdown-content-heading">
+								Activity
+								<ul class="icons-list">
+									<li><a href="#"><i class="icon-menu7"></i></a></li>
+								</ul>
+							</div>
+
+							<ul class="media-list dropdown-content-body width-350">
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-success-400 btn-rounded btn-icon btn-xs"><i
+												class="icon-mention"></i></a>
+									</div>
+
+									<div class="media-body">
+										<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and
+										tricks"
+										<div class="media-annotation">4 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-pink-400 btn-rounded btn-icon btn-xs"><i
+												class="icon-paperplane"></i></a>
+									</div>
+
+									<div class="media-body">
+										Special offers have been sent to subscribed users by <a href="#">Donna
+											Gordon</a>
+										<div class="media-annotation">36 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-blue btn-rounded btn-icon btn-xs"><i
+												class="icon-plus3"></i></a>
+									</div>
+
+									<div class="media-body">
+										<a href="#">Chris Arney</a> created a new <span
+											class="text-semibold">Design</span> branch in <span
+											class="text-semibold">Limitless</span> repository
+										<div class="media-annotation">2 hours ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-purple-300 btn-rounded btn-icon btn-xs"><i
+												class="icon-truck"></i></a>
+									</div>
+
+									<div class="media-body">
+										Shipping cost to the Netherlands has been reduced, database updated
+										<div class="media-annotation">Feb 8, 11:30</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-warning-400 btn-rounded btn-icon btn-xs"><i
+												class="icon-bubble8"></i></a>
+									</div>
+
+									<div class="media-body">
+										New review received on <a href="#">Server side integration</a> services
+										<div class="media-annotation">Feb 2, 10:20</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<a href="#" class="btn bg-teal-400 btn-rounded btn-icon btn-xs"><i
+												class="icon-spinner11"></i></a>
+									</div>
+
+									<div class="media-body">
+										<strong>January, 2016</strong> - 1320 new users, 3284 orders, $49,390 revenue
+										<div class="media-annotation">Feb 1, 05:46</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-bubble8"></i>
+							<span class="visible-xs-inline-block position-right">Messages</span>
+							<span class="status-mark border-orange-400"></span>
+						</a>
+
+						<div class="dropdown-menu dropdown-content width-350">
+							<div class="dropdown-content-heading">
+								Messages
+								<ul class="icons-list">
+									<li><a href="#"><i class="icon-compose"></i></a></li>
+								</ul>
+							</div>
+
+							<ul class="media-list dropdown-content-body">
+								<li class="media">
+									<div class="media-left">
+										<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+										<span class="badge bg-danger-400 media-badge">5</span>
+									</div>
+
+									<div class="media-body">
+										<a href="#" class="media-heading">
+											<span class="text-semibold">James Alexander</span>
+											<span class="media-annotation pull-right">04:58</span>
+										</a>
+
+										<span class="text-muted">who knows, maybe that would be the best thing for
+											me...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left">
+										<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+										<span class="badge bg-danger-400 media-badge">4</span>
+									</div>
+
+									<div class="media-body">
+										<a href="#" class="media-heading">
+											<span class="text-semibold">Margo Baker</span>
+											<span class="media-annotation pull-right">12:16</span>
+										</a>
+
+										<span class="text-muted">That was something he was unable to do
+											because...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left"><img src="assets/images/placeholder.jpg"
+											class="img-circle img-sm" alt=""></div>
+									<div class="media-body">
+										<a href="#" class="media-heading">
+											<span class="text-semibold">Jeremy Victorino</span>
+											<span class="media-annotation pull-right">22:48</span>
+										</a>
+
+										<span class="text-muted">But that would be extremely strained and
+											suspicious...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left"><img src="assets/images/placeholder.jpg"
+											class="img-circle img-sm" alt=""></div>
+									<div class="media-body">
+										<a href="#" class="media-heading">
+											<span class="text-semibold">Beatrix Diaz</span>
+											<span class="media-annotation pull-right">Tue</span>
+										</a>
+
+										<span class="text-muted">What a strenuous career it is that I've
+											chosen...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="media-left"><img src="assets/images/placeholder.jpg"
+											class="img-circle img-sm" alt=""></div>
+									<div class="media-body">
+										<a href="#" class="media-heading">
+											<span class="text-semibold">Richard Vango</span>
+											<span class="media-annotation pull-right">Mon</span>
+										</a>
+
+										<span class="text-muted">Other travelling salesmen live a life of
+											luxury...</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="dropdown-content-footer">
+								<a href="#" data-popup="tooltip" title="All messages"><i
+										class="icon-menu display-block"></i></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-default">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user-material">
+						<div class="category-content">
+							<div class="sidebar-user-material-content">
+								<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-responsive"
+										alt=""></a>
+								<h6>Victoria Baker</h6>
+								<span class="text-size-small">Santa Ana, CA</span>
+							</div>
+
+							<div class="sidebar-user-material-menu">
+								<a href="#user-nav" data-toggle="collapse"><span>My account</span> <i
+										class="caret"></i></a>
+							</div>
+						</div>
+
+						<div class="navigation-wrapper collapse" id="user-nav">
+							<ul class="navigation">
+								<li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+								<li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+								<li><a href="#"><i class="icon-comment-discussion"></i> <span><span
+												class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+								<li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<li>
+									<a href="#"><i class="icon-stack2"></i> <span>ALFAMIKRO</span></a>
+									<ul>
+										<li class="active"><a href=""><i class="icon-list3"></i> Catalog Product</a>
+										</li>
+										<li><a href="tipe-toko-ho.html"><i class="fa fa-users"></i> Tipe Toko OBA</a>
+										</li>
+										<li><a href="group-custom.html"><i class="fa fa-object-group"></i> Group
+												Custom</a></li>
+									</ul>
+								</li>
+								<!-- /page kits -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header page-header-default">
+
+					<div class="breadcrumb-line">
+						<ul class="breadcrumb">
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Alfamikro</a></li>
+							<li><a href="catalog-product.html">Catalog Management</a></li>
+							<li class="active">Edit Catalog</li>
+						</ul>
+
+						<ul class="breadcrumb-elements">
+							<li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-gear position-left"></i>
+									Settings
+									<span class="caret"></span>
+								</a>
+
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+									<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+									<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Complex headers example -->
+					<div class="panel panel-flat header-sticky">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-10">
+									<div class="row">
+										<div class="col-xs-6">
+											<h5 class="panel-title"><i class="icon-arrow-left8 mr-20"></i> 213145
+												| Choco Mania</h5>
+											<p>A1235316772317 | Lorem Ipmsum | lorem.ipsum@gmail.com</p>
+										</div>
+										<div class="col-xs-6">
+											<div class="row">
+												<div class="col-xs-6 text-semibold text-success-300 text-right">
+													<p>ACTIVE</p>
+
+												</div>
+												<div class="col-xs-6">
+													<p>Simple Product</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 text-right">
+									<button type="button" class="btn btn-primary">Menu</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-flat">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-1 text-center pt-10">
+									<span>Category</span>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+
+								<div class="col-xs-2 col-xs-offset-1">
+
+
+									<button class="btn btn-lg"><i class="fa fa-plus-circle"></i></button>
+
+									<button class="btn btn-lg"><i class="fa fa-minus-circle"></i></button>
+									<button class="btn btn-lg "><i class="fa fa-refresh"></i></button>
+
+									<button class="btn btn-lg"><i class="fa fa-check-circle"></i></button>
+								</div>
+							</div>
+							<div class="row mt-10">
+								<div class="col-xs-1 pt-10 text-center">
+									Category
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""> work</option>
+										<option value=""> hard</option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+								<div class="col-xs-2">
+									<select class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+
+								<div class="col-xs-2 col-xs-offset-1">
+
+
+									<button class="btn btn-lg"><i class="fa fa-plus-circle"></i></button>
+
+									<button class="btn btn-lg"><i class="fa fa-minus-circle"></i></button>
+									<button class="btn btn-lg "><i class="fa fa-refresh"></i></button>
+
+									<button class="btn btn-lg"><i class="fa fa-check-circle"></i></button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+					<div class="panel panel-flat">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-12 text-right">
+									<p><span class="text-semibold">Last Update:</span> 07032019 11:00 <span
+											class="text-semibold ml-15">Update by:</span> Lorem Ipsum</p>
+								</div>
+
+							</div>
+
+
+							<!-- ------------------------------ TABPANEL---- -->
+
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="primary-tab">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#editProduct" data-toggle="tab"
+													class="legitRipple">Edit Catalog Product</a></li>
+											<li><a href="#multiSelling" data-toggle="tab" class="legitRipple">Multi
+													Selling Channel</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- ------------------------------ Content -->
+
+
+							<div class="row ">
+								<div class="tab-content">
+									<div class="tab-pane active" id="editProduct">
+
+
+										<div id="content-ecp">
+
+
+
+
+<div class="row main-layout">
+	<div class="col-xs-12">
+		<div class="form-horizontal">
+			<fieldset>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">PLU</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-2">Barcode</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Status</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Name<span
+							class="text-danger">*</span></label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Type</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-2">Images</label>
+					<div class="col-xs-10">
+						<form action="#" class="dropzone"
+							id="dropzone_multiple2"></form>
+					</div>
+					<div class="col-xs-10 col-xs-offset-2">
+						<div class="radio image-option">
+							<label>
+								<input type="radio" name="unstyled-radio-left">
+								<img src="assets/images/placeholder.jpg">
+								<p>
+									<input type="text" class="form-control"
+										value="image1.png" readonly>
+									<input type="text" class="form-control"
+										value="1" readonly>
+								</p>
+							</label>
+						</div>
+						<div class="radio image-option">
+							<label>
+								<input type="radio" name="unstyled-radio-left">
+								<img src="assets/images/placeholder.jpg">
+								<p>
+									<input type="text" class="form-control"
+										value="image2.png" readonly>
+									<input type="text" class="form-control"
+										value="2" readonly>
+								</p>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Short
+						Description <span class="text-danger">*</span></label>
+					<div class="col-xs-10">
+						<textarea id="editor1" name="editordesc"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-2">Description
+						<span class="text-danger">*</span></label>
+					<div class="col-xs-10">
+						<textarea id="editor2"
+							name="editorshortdesc"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Weight (gram)
+						<span class="text-danger">*</span></label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Package
+						(cm)</label>
+					<div class="col-xs-8">
+						<form class="form-inline">
+							<div class="form-group">
+								<label class="control-label col-xs-4">
+									Height <span class="text-danger">*</span>
+								</label>
+								<div class="col-xs-3">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-4">Width
+									<span class="text-danger">*</span>
+								</label>
+								<div class="col-xs-3">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-4">
+									Length <span class="text-danger">*</span>
+								</label>
+								<div class="col-xs-3">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Volume
+						(Cm3)</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Brand</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">SKU
+						Suplier</label>
+					<div class="col-xs-6">
+
+						<table class="table table-bordered text-center">
+
+							<thead>
+								<tr>
+									<th class="text-center">Suplier </th>
+									<th class="text-center"> SKU Supplier</th>
+									<th class="text-center"> Harga Beli</th>
+									<th class="text-center"> Denom</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Suplier A</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Suplier B</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Suplier C</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+					</div>
+				</div>
+
+
+
+			</fieldset>
+		</div>
+	</div>
+
+	<div class="col-xs-12">
+		<div class="panel-group content-group-lg" id="accordion1">
+			<div class="panel panel-white">
+				<div class="panel-heading">
+					<p class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion1"
+							href="#accordion-group1"
+							class="display-block">Attributes <i
+								class="icon-plus3 pull-right"></i></a>
+					</p>
+				</div>
+				<div id="accordion-group1" class="panel-collapse collapse">
+					<div class="panel-body">
+						Attributes content
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+<div class="row main-layout">
+	<div class="col-xs-12">
+		<div class="form-horizontal">
+			<fieldset>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">SKU</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-xs-2">Seller</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Store Name</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2"> Product Tag</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Barcode Alt</label>
+					<div class="col-xs-3">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">SKU
+						Suplier</label>
+					<div class="col-xs-6">
+
+						<table class="table table-bordered text-center">
+
+							<thead>
+								<tr>
+									<th class="text-center">Suplier </th>
+									<th class="text-center"> SKU Supplier</th>
+									<th class="text-center"> Harga Beli</th>
+									<th class="text-center"> Denom</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Suplier A</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Suplier B</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+								<tr>
+									<td>Suplier C</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Product Group</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-xs-2">Sell Product Status
+					</label>
+					<div class="col-xs-3">
+						<select class="form-control">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+
+			</fieldset>
+		</div>
+	</div>
+
+
+	<div class="col-xs-12">
+		<div class="panel-group content-group-lg" id="accordion2">
+			<div class="panel panel-white">
+				<div class="panel-heading">
+					<p class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion2"
+							href="#accordion-group2" class="display-block">SEO
+							<i class="icon-plus3 pull-right"></i></a>
+					</p>
+				</div>
+				<div id="accordion-group2" class="panel-collapse collapse">
+					<div class="panel-body">
+						SEO content
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+	<div class="col-xs-12">
+		<div class="panel-group content-group-lg" id="accordion3">
+			<div class="panel panel-white">
+				<div class="panel-heading">
+					<p class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion3"
+							href="#accordion-group3"
+							class="display-block">Product Information <i
+								class="icon-plus3 pull-right"></i></a>
+					</p>
+				</div>
+				<div id="accordion-group3" class="panel-collapse collapse">
+					<div class="panel-body">
+						Product Information content
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+										</div>
+									</div>
+
+									<div class="tab-pane" id="multiSelling">
+									<div id="content-msc">
+
+									<div class="row main-layout">
+										<div class="col-xs-12">
+											<div class="form-horizontal">
+												<fieldset>
+													<div class="form-group">
+								
+								
+														<a href="#" class="dropdown-toggle legitRipple"
+															data-toggle="dropdown" aria-expanded="true">
+								
+															<label class="col-xs-2 control-label">Selling
+																Channel <i class="icon-arrow-down5"></i></label>
+								
+														</a>
+								
+														<ul class="dropdown-menu ">
+								
+															<li><a href="#"> Alfacart</a></li>
+															<li><a href="#"> b2b</a></li>
+															<li><a href="#"> Alafapop</a></li>
+															<li><a href="#"> Alfamikro</a></li>
+															<li><a href="#"> Alfamind</a></li>
+								
+															<li><a href="#"> Alfagift</a></li>
+														</ul>
+								
+								
+														<button class=" btn btn-primary"> <i
+																class="glyphicon glyphicon-plus"></i> Add
+															New</button>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+								
+										<div class="col-xs-12">
+											<ul class="nav nav-tabs multisell-tabs nav-justified">
+												<li class="active"><a href="#channelAlfamikro" data-toggle="tab"
+														class="legitRipple">Alfamikro</a>
+												</li>
+												<li><a href="#channelB2B" data-toggle="tab"
+														class="legitRipple">B2B</a></li>
+												<li><a href="#channelAlfapop" data-toggle="tab"
+														class="legitRipple">AlfaPop</a></li>
+												<li><a href="#channelAlfacart" data-toggle="tab"
+														class="legitRipple">Alfacart</a></li>
+												<li><a href="#channelAlfamind" data-toggle="tab"
+														class="legitRipple">Alfamind</a></li>
+												<li><a href="#channelAlfagift" data-toggle="tab"
+														class="legitRipple">Alfagift</a></li>
+											</ul>
+								
+											<div class="tab-content mb-20">
+												<div class="tab-pane active" id="channelAlfamikro">
+													<div class="row">
+														<div class="col-xs-6">
+															<h5>Category Product</h5>
+														</div>
+														<div class="col-xs-6 text-right"><span
+																class="text-danger text-bold">Reset</span>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="table-responsive">
+																<table class="table">
+																	<tbody>
+																		<tr>
+																			<td
+																				class="no-border-top no-padding-left">
+																				<select class="form-control">
+																					<option value="Makanan">
+																						Makanan</option>
+																				</select>
+																			</td>
+																			<td class="no-border-top">
+																				<select class="form-control">
+																					<option value="Makanan">
+																						Lorem Ipsum</option>
+																				</select>
+																			</td>
+																			<td class="no-border-top">
+																				<select class="form-control">
+																					<option value="Makanan">
+																						Lorem Ipsum</option>
+																				</select>
+																			</td>
+																			<td class="no-border-top">
+																				<select class="form-control">
+																					<option value="Makanan">
+																						Lorem Ipsum</option>
+																				</select>
+																			</td>
+																			<td
+																				class="no-border-top no-padding-right">
+																				<select class="form-control">
+																					<option value="Makanan">
+																						Lorem Ipsum</option>
+																				</select>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+								
+													<div class="row mt-20 mb-20">
+														<div class="col-xs-12">
+															<div class="form-horizontal">
+																<fieldset>
+																	<div class="form-group">
+																		<label
+																			class="col-xs-2 control-label">Status</label>
+																		<div class="col-xs-3">
+																			<form>
+																				<label class="radio-inline">
+																					<input type="radio"
+																						name="optradio" checked>
+																					Active
+																				</label>
+																				<label class="radio-inline">
+																					<input type="radio"
+																						name="optradio"> Inactive
+																				</label>
+								
+																			</form>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Branch
+																			Group</label>
+																		<div class="col-xs-4">
+																			<div class="row mb-10">
+																				<div class="col-xs-9">
+																					<select class="form-control">
+																						<option value="Jawa">
+																							Jawa</option>
+																					</select>
+																				</div>
+																				<label
+																					class="col-xs-3 control-label">
+																					<i
+																						class="fa fa-minus-circle ml-15"></i>
+																					<i
+																						class="fa fa-pencil ml-15"></i>
+																				</label>
+																			</div>
+																			<div class="row mb-10">
+																				<div class="col-xs-9">
+																					<select class="form-control">
+																						<option value="Bali">
+																							Bali</option>
+																					</select>
+																				</div>
+																				<label
+																					class="col-xs-3 control-label">
+																					<i
+																						class="fa fa-minus-circle ml-15"></i>
+																					<i
+																						class="fa fa-plus-circle ml-15"></i>
+																					<i
+																						class="fa fa-pencil ml-15"></i>
+																				</label>
+																			</div>
+																			<div class="row mt-20">
+																				<div class="col-xs-12">
+																					<button type="button"
+																						class="btn btn-flat text-default border-primary"
+																						data-toggle="modal"
+																						data-target="#modal_active_branch">View
+																						Active
+																						Branch</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Url
+																			<span
+																				class="text-danger">*</span></label>
+																		<div class="col-xs-10">
+																			<input type="text" class="form-control">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Promo
+																			Image</label>
+																		<div class="col-xs-10">
+																			<form action="#" class="dropzone"
+																				id="dropzone_multiple1">
+																			</form>
+																		</div>
+																	</div>
+																</fieldset>
+															</div>
+														</div>
+													</div>
+								
+													<div class="row">
+														<div class="col-xs-12">
+															<h5>Visibility by :</h5>
+														</div>
+													</div>
+								
+													<div class="row mt-20 mb-20">
+														<div class="col-xs-12">
+															<div class="form-horizontal">
+																<fieldset>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Cash
+																			on Delivery
+																			<span
+																				class="text-danger">*</span></label>
+																		<div class="col-xs-3">
+																			<form>
+																				<label class="radio-inline">
+																					<input type="radio"
+																						name="optradio" checked>
+																					Visible
+																				</label>
+																				<label class="radio-inline">
+																					<input type="radio"
+																						name="optradio"> Not Visible
+																				</label>
+								
+																			</form>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label
+																			class="col-xs-2 control-label">Catalog
+																			<span
+																				class="text-danger">*</span></label>
+																		<div class="col-xs-3">
+																			<select class="form-control">
+																				<option value="Visible">
+																					Visible</option>
+																				<option value="Invisible">
+																					Invisible</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">PDP
+																			<span
+																				class="text-danger">*</span></label>
+																		<div class="col-xs-3">
+																			<select class="form-control">
+																				<option value="Visible">
+																					Visible</option>
+																				<option value="Invisible">
+																					Invisible</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label
+																			class="col-xs-2 control-label">Platform</label>
+								
+																		<div class="col-xs-8">
+																			<label class="checkbox-inline">
+																				<input type="checkbox"> Web
+																			</label>
+																			<label class="checkbox-inline">
+																				<input type="checkbox"> mWeb
+																			</label>
+																			<label class="checkbox-inline">
+																				<input type="checkbox">
+																				Android
+																			</label>
+																			<label class="checkbox-inline">
+																				<input type="checkbox"> Ios
+																			</label>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Cash
+																			on Delivery</label>
+																		<div class="col-xs-3">
+																			<label class="radio-inline">
+																				<input type="radio" name="codOpt"
+																					checked="checked">
+																				Yes
+																			</label>
+																			<label class="radio-inline">
+																				<input type="radio" name="codOpt">
+																				No
+																			</label>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-xs-2 control-label">Pickup
+																			Availability</label>
+																		<div class="col-xs-3">
+																			<label class="radio-inline">
+																				<input type="radio" name="pickupOpt"
+																					checked="checked">
+																				Yes
+																			</label>
+																			<label class="radio-inline">
+																				<input type="radio"
+																					name="pickupOpt">
+																				No
+																			</label>
+																		</div>
+																	</div>
+								
+																	<div class="row mt-20">
+																		<div class="col-xs-12">
+																			<div class="panel-group content-group-lg"
+																				id="accordion2">
+																				<div
+																					class="panel panel-white mb-20">
+																					<div class="panel-heading">
+																						<p
+																							class="panel-title text-center text-bold">
+																							<a data-toggle="collapse"
+																								data-parent="#accordion2"
+																								href="#inventory-group2"
+																								class="display-block">Inventory
+																								<i
+																									class="icon-arrow-down5 pull-right"></i></a>
+																						</p>
+																					</div>
+																					<div id="inventory-group2"
+																						class="panel-collapse collapse">
+																						<div class="panel-body">
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Inventory
+																										All</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="form-horizontal">
+																										<fieldset>
+																											<div
+																												class="form-group">
+																												<label
+																													class="control-label col-xs-3">Min
+																													Qty
+																													Allowed
+																													Shopping
+																													Cart</label>
+																												<div
+																													class="col-xs-2">
+																													<input
+																														type="number"
+																														class="form-control"
+																														value="1234">
+																												</div>
+																											</div>
+																											<div
+																												class="form-group">
+																												<label
+																													class="control-label col-xs-3">Max
+																													Qty
+																													Allowed
+																													Shopping
+																													Cart</label>
+																												<div
+																													class="col-xs-2">
+																													<input
+																														type="number"
+																														class="form-control"
+																														value="1234">
+																												</div>
+																												<div
+																													class="col-xs-2">
+																													<label
+																														class="checkbox-inline">
+																														<input
+																															type="checkbox">
+																														Unlimited
+																													</label>
+																												</div>
+																											</div>
+																											<div
+																												class="form-group">
+																												<label
+																													class="control-label col-xs-3">Max
+																													Qty
+																													per
+																													Customer
+																													per
+																													Day</label>
+																												<div
+																													class="col-xs-2">
+																													<input
+																														type="number"
+																														class="form-control"
+																														value="1234">
+																												</div>
+																												<div
+																													class="col-xs-2">
+																													<label
+																														class="checkbox-inline">
+																														<input
+																															type="checkbox">
+																														Unlimited
+																													</label>
+																												</div>
+																											</div>
+																											<div
+																												class="form-group">
+																												<label
+																													class="control-label col-xs-3">Increment
+																													Qty
+																													in
+																													Shopping
+																													Cart</label>
+																												<div
+																													class="col-xs-2">
+																													<input
+																														type="number"
+																														class="form-control"
+																														value="1234">
+																												</div>
+																											</div>
+																											<div
+																												class="form-group">
+																												<label
+																													class="control-label col-xs-3">Increment
+																													Pack
+																													Qty
+																													in
+																													Cart</label>
+																												<div
+																													class="col-xs-2">
+																													<input
+																														type="number"
+																														class="form-control"
+																														value="1234">
+																												</div>
+																											</div>
+																										</fieldset>
+																									</div>
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Inventory
+																										Group</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="row">
+																										<div
+																											class="col-xs-12 text-right">
+																											<button
+																												type="button"
+																												class="btn btn-primary"><i
+																													class="icon-plus-circle2 position-left"></i>
+																												Add
+																												New</button>
+																										</div>
+																										<div
+																											class="col-xs-12 pt-20">
+																											<h4>Filter
+																											</h4>
+																											<div
+																												class="table-responsive tb-filter scrollable">
+																												<table
+																													class="table">
+																													<tr>
+																														<td><label
+																																class="text-semibold">Group</label>
+																														</td>
+																														<td><label
+																																class="text-semibold">Min
+																																Qty
+																																Allowed
+																																Shopping
+																																Cart</label>
+																														</td>
+																														<td><label
+																																class="text-semibold">Max
+																																Qty
+																																Allowed
+																																Shopping
+																																Cart</label>
+																														</td>
+																														<td><label
+																																class="text-semibold">Max
+																																Qty
+																																per-Customer
+																																per-Day</label>
+																														</td>
+																														<td><label
+																																class="text-semibold">Increment
+																																Qty
+																																in
+																																Shopping
+																																Cart</label>
+																														</td>
+																														<td><label
+																																class="text-semibold">Increment
+																																Pack
+																																Qty
+																																in
+																																Cart</label>
+																														</td>
+																														<td rowspan="2"
+																															class="sticky-col">
+																															<button
+																																type="button"
+																																class="btn btn-default btn-xs btn-block">Search</button>
+																															<button
+																																type="button"
+																																class="btn btn-default btn-xs btn-block">Reset</button>
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>
+																															<select
+																																class="form-control">
+																																<option
+																																	value="AMA MM">
+																																	AMA
+																																	MM
+																																</option>
+																															</select>
+																														</td>
+																														<td>
+																															<div
+																																class="form-group has-feedback no-margin">
+																																<input
+																																	type="text"
+																																	class="form-control"
+																																	placeholder="">
+																																<div
+																																	class="form-control-feedback">
+																																	<i
+																																		class="icon-search4 text-size-base"></i>
+																																</div>
+																															</div>
+																														</td>
+																														<td>
+																															<div
+																																class="form-group has-feedback no-margin">
+																																<input
+																																	type="text"
+																																	class="form-control"
+																																	placeholder="">
+																																<div
+																																	class="form-control-feedback">
+																																	<i
+																																		class="icon-search4 text-size-base"></i>
+																																</div>
+																															</div>
+																														</td>
+																														<td>
+																															<div
+																																class="form-group has-feedback no-margin">
+																																<input
+																																	type="text"
+																																	class="form-control"
+																																	placeholder="">
+																																<div
+																																	class="form-control-feedback">
+																																	<i
+																																		class="icon-search4 text-size-base"></i>
+																																</div>
+																															</div>
+																														</td>
+																														<td>
+																															<div
+																																class="form-group has-feedback no-margin">
+																																<input
+																																	type="text"
+																																	class="form-control"
+																																	placeholder="">
+																																<div
+																																	class="form-control-feedback">
+																																	<i
+																																		class="icon-search4 text-size-base"></i>
+																																</div>
+																															</div>
+																														</td>
+																														<td>
+																															<div
+																																class="form-group has-feedback no-margin">
+																																<input
+																																	type="text"
+																																	class="form-control"
+																																	placeholder="">
+																																<div
+																																	class="form-control-feedback">
+																																	<i
+																																		class="icon-search4 text-size-base"></i>
+																																</div>
+																															</div>
+																														</td>
+																													</tr>
+																												</table>
+																											</div>
+								
+																											<table
+																												class="table datatable-tipe-toko">
+																												<thead>
+																													<tr>
+																														<th>Group
+																														</th>
+																														<th>Min
+																															Qty
+																															Allowed
+																															Shopping
+																															Cart
+																														</th>
+																														<th>Max
+																															Qty
+																															Allowed
+																															Shopping
+																															Cart
+																														</th>
+																														<th>Max
+																															Qty
+																															per-Customer
+																															per-Day
+																														</th>
+																														<th>Increment
+																															Qty
+																															in
+																															Shopping
+																															Cart
+																														</th>
+																														<th>Increment
+																															Pack
+																															Qty
+																															in
+																															Cart
+																														</th>
+																													</tr>
+																												</thead>
+																												<tbody>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>30
+																														</td>
+																														<td>300
+																														</td>
+																														<td>3000
+																														</td>
+																														<td>30
+																														</td>
+																														<td>300
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>300000
+																														</td>
+																														<td>300
+																														</td>
+																														<td>30000000
+																														</td>
+																														<td>300
+																														</td>
+																														<td>30000
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																													<tr>
+																														<td>AMA
+																															MM
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																														<td>2000
+																														</td>
+																														<td>20
+																														</td>
+																														<td>200
+																														</td>
+																													</tr>
+																												</tbody>
+																											</table>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+								
+																				<div class="panel panel-white">
+																					<div class="panel-heading">
+																						<p
+																							class="panel-title text-center text-bold">
+																							<a class="collapsed display-block"
+																								data-toggle="collapse"
+																								data-parent="#accordion2"
+																								href="#price-group2">Price
+																								<i
+																									class="icon-arrow-down5 pull-right"></i></a>
+																						</p>
+																					</div>
+																					<div id="price-group2"
+																						class="panel-collapse collapse">
+																						<div class="panel-body">
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Harga
+																										Jual</span>
+																								</div>
+																								<div
+																									class="panel-body">
+								
+								
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																											Add
+																											New</button>
+																									</div>
+								
+								
+								
+																									<div
+																										class="col-xs-12">
+								
+																										<div
+																											class="form-group">
+																											<label
+																												class=" col-xs-3">Harga
+																												Terakhir</label>
+																											<div
+																												class="col-xs-2">
+																												<span>20000</span>
+																											</div>
+								
+																											<div
+																												class="col-xs-2">
+																												<span>
+																													150000</span>
+																											</div>
+																											<div
+																												class="col-xs-2 ">
+								
+																												<span
+																													class="text-danger">
+																													<i
+																														class="glyphicon glyphicon-arrow-up"></i></span>
+								
+																												<span>Rp.
+																													150000</span>
+								
+								
+																											</div>
+																										</div>
+																										<div
+																											class="form-group">
+																											<label
+																												class=" col-xs-3">Harga
+																												Sekarang
+																											</label>
+																											<div
+																												class="col-xs-2">
+																												<span>20000</span>
+																											</div>
+								
+																											<div
+																												class="col-xs-2">
+																												<span>
+																													150000</span>
+																											</div>
+																											<div
+																												class="col-xs-2 ">
+								
+																												<span
+																													class="text-danger">
+																													<i
+																														class="glyphicon glyphicon-arrow-up"></i></span>
+								
+																												<span>Rp.
+																													150000</span>
+								
+								
+																											</div>
+																										</div>
+																										<div
+																											class="form-group">
+																											<label
+																												class=" col-xs-3">Harga
+																												yang
+																												akan
+																												datang</label>
+																											<div
+																												class="col-xs-2">
+																												<span>20000</span>
+																											</div>
+								
+																											<div
+																												class="col-xs-2">
+																												<span>
+																													150000</span>
+																											</div>
+																											<div
+																												class="col-xs-2 ">
+								
+																												<span
+																													class="text-success">
+																													<i
+																														class="glyphicon glyphicon-arrow-down"></i></span>
+								
+																												<span>Rp.
+																													150000</span>
+								
+								
+																											</div>
+																										</div>
+								
+																									</div>
+																									<!-- ------------------------------new -->
+																									<div
+																										class="col-xs-12 pt-20">
+								
+								
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th>Tanggal
+																													</th>
+																													<th> Harga
+																													</th>
+																													<th> Deviasi
+																													</th>
+																												</tr>
+								
+								
+																											</thead>
+																											<tbody>
+																												<tr>
+																													<td
+																														class="col-xs-3">
+																														<div
+																															class="form-group">
+								
+																															<div
+																																class="input-group">
+																																<span>Start</span>
+																																<span>
+								
+																																	<input
+																																		type="text"
+																																		class="form-control daterange-single"
+																																		value="03/18/2013">
+																																</span>
+																																<span
+																																	class="input-group-addon"><i
+																																		class="icon-calendar22"></i></span>
+																															</div>
+																														</div>
+																														<div
+																															class="form-group">
+								
+																															<div
+																																class="input-group">
+																																<span>
+																																	End</span>
+																																<span>
+																																	<input
+																																		type="text"
+																																		class="form-control daterange-single"
+																																		value="03/18/2013">
+																																</span>
+																																<span
+																																	class="input-group-addon">
+																																	<i
+																																		class="icon-calendar22"></i></span>
+																															</div>
+																														</div>
+																													</td>
+																													<td> <select
+																															class="form-control">
+																															<option
+																																value="">
+																															</option>
+																														</select>
+																													</td>
+																													<td> <select
+																															class="form-control">
+																															<option
+																																value="">
+																															</option>
+																														</select>
+																													</td>
+																												</tr>
+								
+																												<tr>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																												</tr>
+								
+								
+								
+																											</tbody>
+																										</table>
+																									</div>
+								
+																									<!-- ------------------------------ ---- -->
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Harga
+																										Jual
+																										Group</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																												Add New</button>
+																									</div>
+																									<div
+																										class="col-xs-12 pt-20">
+								
+								
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th>Member
+																														Group
+																													</th>
+																													<th> Branch
+																														Group
+																													</th>
+																													<th> Harga
+																														Terakhir
+																													</th>
+								
+																													<th> Harga
+																														Saat
+																														ini
+																													</th>
+																													<th> Tanggal
+																														Akan
+																														Datang
+																													</th>
+								
+																													<th>Harga
+																														Akan
+																														Datang
+																													</th>
+																												</tr>
+																											</thead>
+																											<tbody>
+																												<tr>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</div>
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Hemat
+																										Promo</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																												Add New</button>
+																									</div>
+																									<div
+																										class="col-xs-12 pt-20">
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th>Branch
+																														Group
+																													</th>
+																													<th> Periode
+																														Awal
+																													</th>
+																													<th> Periode
+																														Akhir
+																													</th>
+								
+																													<th> Harga
+																													</th>
+																													<th> Action
+																													</th>
+																												</tr>
+																											</thead>
+																											<tbody>
+								
+																												<tr>
+																													<td> jakarta
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+								
+																												</tr>
+																												<tr>
+																													<td> Bandung
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+								
+																												</tr>
+								
+								
+																											</tbody>
+																										</table>
+																									</div>
+								
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Hemat
+																										Promo
+																										Group</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																												Add New</button>
+																									</div>
+																									<div
+																										class="col-xs-12 pt-20">
+								
+								
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th> Member
+																														Group
+																													</th>
+																													<th> Branch
+																														Group
+																													</th>
+																													<th> Periode
+																														Awal
+																													</th>
+								
+																													<th> Periode
+																														Akhir
+																													</th>
+																													<th> Harga
+																													</th>
+								
+								
+								
+																												</tr>
+								
+								
+																											</thead>
+																											<tbody>
+								
+								
+																												<tr>
+																													<td> jakarta
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+								
+																												</tr>
+																												<tr>
+																													<td> Bandung
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+								
+																												</tr>
+								
+								
+																											</tbody>
+																										</table>
+																									</div>
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Range
+																										Price</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																											Add New</button>
+																									</div>
+								
+																									<div
+																										class="col-xs-12 pt-20">
+								
+								
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th> Member
+																														group
+																													</th>
+																													<th> QTY
+																													</th>
+																													<th> Periode
+																														Awal
+																													</th>
+								
+																													<th> Periode
+																														Akhir
+																													</th>
+																													<th> Action
+																													</th>
+								
+								
+								
+																												</tr>
+								
+								
+																											</thead>
+																											<tbody>
+								
+								
+																												<tr>
+																													<td> jakarta
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+								
+																												</tr>
+																												<tr>
+																													<td> Bandung
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+								
+																												</tr>
+								
+								
+																											</tbody>
+																										</table>
+																									</div>
+																								</div>
+																							</div>
+																							<div
+																								class="panel panel-default">
+																								<div
+																									class="panel-heading">
+																									<span
+																										class="text-bold">Range
+																										Price
+																										Group</span>
+																								</div>
+																								<div
+																									class="panel-body">
+																									<div
+																										class="col-xs-12 text-right">
+																										<button
+																											type="button"
+																											class="btn btn-primary legitRipple"><i
+																												class="icon-plus-circle2 position-left"></i>
+																											Add New</button>
+																									</div>
+								
+																									<div
+																										class="col-xs-12 pt-20">
+								
+								
+																										<table
+																											class="table datatable-tipe-toko table-bordered">
+																											<thead>
+																												<tr>
+																													<th> Member
+																														group
+																													</th>
+																													<th> Branch
+																														Group
+																													</th>
+																													<th> QTY
+																													</th>
+																													<th> Periode
+																														Awal
+																													</th>
+								
+																													<th> Periode
+																														Akhir
+																													</th>
+																													<th> Action
+																													</th>
+																												</tr>
+																											</thead>
+																											<tbody>
+																												<tr>
+																													<td> jakarta
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+																												</tr>
+																												<tr>
+																													<td> Bandung
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td>
+																													</td>
+																													<td> <a
+																															href="">detail</a>
+																													</td>
+								
+																												</tr>
+																											</tbody>
+																										</table>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+								
+								
+																	<div class="col-xs-2 ">
+								
+								
+																			<a href="#"
+																				class="dropdown-toggle legitRipple"
+																				data-toggle="dropdown"
+																				aria-expanded="true">
+								
+																				<label
+																					class="col-xs-12 control-label">Selling
+																					Channel <i
+																						class="icon-arrow-down5"></i></label>
+								
+																			</a>
+								
+																			<ul class="dropdown-menu ">
+								
+								
+																				<li><a href="#"> b2b</a></li>
+																				<li><a href="#"> Alafapop</a></li>
+																				<li><a href="#"> Alfamikro</a></li>
+																				<li><a href="#"> Alfamind</a></li>
+								
+																				<li><a href="#"> Alfagift</a></li>
+																			</ul>
+								
+																	</div>
+								
+																	<div class="col-xs-3">
+																		<button type="button"
+																			class="btn btn-primary">Copy</button>
+																	</div>
+															</div>
+								
+															</fieldset>
+														</div>
+													</div>
+												</div>
+								
+								
+								
+											</div>
+								
+										</div>
+									</div>
+								
+								
+								
+								
+
+
+									</div>
+									</div>
+
+
+
+
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12 text-right">
+										<button type="button" class="btn btn-primary">SAVE</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ------------------------------ -->
+
+
+					</div>
+				</div>
+				<!-- /complex headers example -->
+
+			</div>
+			<!-- /content area -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!--Modal Edit FC-->
+	<div id="modalEditFc" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h5 class="modal-title">Edit</h5>
+				</div>
+
+				<div class="modal-body">
+					<p>Apakah Anda yakin ingin mengubah?</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary legitRipple" data-toggle="modal"
+						data-target="#modalSuccessEditFc" data-dismiss="modal">SIMPAN</button>
+					<button type="button" class="btn btn-default legitRipple" data-dismiss="modal">BATAL</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Modal Success Edit FC-->
+	<div id="modalSuccessEditFc" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<h5 class="modal-title">Edit</h5>
+				</div>
+
+				<div class="modal-body">
+					<p>Success!</p>
+				</div>
+
+				<div class="modal-footer">
+					<a href="tipe-toko-ho.html"><button type="button"
+							class="btn btn-primary legitRipple">OK</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Large modal -->
+	<div id="modal_active_branch" class="modal fade">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h5 class="modal-title">Large modal</h5>
+				</div>
+
+				<div class="modal-body">
+					<h6 class="text-semibold">Text in a modal</h6>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent
+						commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+						laoreet rutrum faucibus dolor auctor.</p>
+
+					<hr>
+
+					<h6 class="text-semibold">Another paragraph</h6>
+					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
+						egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
+						augue laoreet rutrum faucibus dolor auctor.</p>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /large modal -->
+
+
+	<script>
+
+
+		$(function () {
+
+
+			// Table setup
+			// ------------------------------
+
+			// Setting datatable defaults
+			$.extend($.fn.dataTable.defaults, {
+				columnDefs: [{
+					// orderable: false,
+					// width: '100px',
+					// targets: [ 5 ]
+				}],
+				dom: '<"datatable-header"fl><"datatable-scroll datatable-scroll-wrap"t><"datatable-footer"ip>',
+				language: {
+					search: '<span>Filter:</span> _INPUT_',
+					lengthMenu: '<span>Show:</span> _MENU_',
+					paginate: { 'first': 'First', 'last': 'Last', 'next': '&rarr;', 'previous': '&larr;' }
+				}
+			});
+
+
+			//
+			// Fixed column with complex headers
+			//
+
+			// Initialize
+			var table = $('.datatable-tipe-toko').DataTable({
+				autoWidth: false,
+				columnDefs: [
+					{
+						orderable: false,
+						targets: []
+					}
+				],
+				scrollX: true,
+				scrollY: '350px',
+				scrollCollapse: true,
+				fixedColumns: false
+			});
+
+			// Adjust columns on window resize
+			setTimeout(function () {
+				$(window).on('resize', function () {
+					table.columns.adjust();
+				});
+			}, 100);
+
+
+
+			// External table additions
+			// ------------------------------
+
+			// Add placeholder to the datatable filter option
+			$('.dataTables_filter input[type=search]').attr('placeholder', 'Type to filter...');
+
+
+			// Enable Select2 select for the length option
+			$('.dataTables_length select').select2({
+				minimumResultsForSearch: Infinity,
+				width: 'auto'
+			});
+
+		});
+
+		(function ($) {
+			$(function () {
+				$('.multi-select-dd').fSelect();
+			});
+		})(jQuery);
+
+		$('#dropzone_multiple1').dropzone();
+		$('#dropzone_multiple2').dropzone();
+		$(document).ready(function () {
+			$('#editor1').summernote();
+			$('#editor2').summernote();
+		});
+	</script>
+</body>
+
+
+
+</html>
