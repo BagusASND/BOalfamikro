@@ -25,3 +25,21 @@ padding: 40px 40px 40px 40px;
     background:white !important;
     z-index: 1 !important;
 }
+
+
+.scroll{
+    overflow: scroll !important;
+}
+
+.w-150{
+width: 150% !important;
+}
+
+.gray{
+    background-color: #EEEEEE !important;
+}
+
+
+.pt-10{
+    padding-top: 10px !important;
+}
