@@ -18,7 +18,7 @@
 	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/fSelect.css" rel="stylesheet">
 	<link href="assets/css/custom/main.css" rel="stylesheet">
-	<link href="summernote/summernote.css" rel="stylesheet">
+	<link href="assets/summernote/summernote.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -55,7 +55,7 @@
 	<script type="text/javascript" src="assets/js/pages/form_multiselect.js"></script>
 	<script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
 	<script type="text/javascript" src="assets/js/pages/uploader_dropzone.js"></script>
-	<script src="summernote/summernote.js"></script>
+	<script type="text/javascript" src="assets/summernote/summernote.js"></script>
 
 	<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/fSelect/fSelect.js"></script>
@@ -130,6 +130,9 @@
 			border: none;
 
 		}
+		.daterangepicker.dropdown-menu{
+			z-index: 1090 !important;
+		}
 		.primary-tab .nav-tabs li.active a::after {
 			content: "";
 			position: absolute;
@@ -137,8 +140,8 @@
 			height: 2px;
 			background: #2196F3;
 			border-radius: 5em;
-left: 0;
-	top: 34px;
+			left: 0;
+			top: 34px;
 			border: none;
 
 		}
@@ -637,12 +640,6 @@ left: 0;
 													</ul>
 												</div>
 											</div>
-
-
-
-
-
-
 										</div>
 										<div class="col-xs-6">
 											<div class="row">
@@ -773,13 +770,17 @@ left: 0;
 								<div class="col-xs-12">
 									<div class="primary-tab">
 										<ul class="nav nav-tabs">
-											<li class=" mr-30 active"> <h4> <a href="#editProduct" data-toggle="tab"
-													class="legitRipple">Edit Catalog Product</a> </h4></li>
+											<li class=" mr-30 active">
+												<h4> <a href="#editProduct" data-toggle="tab" class="legitRipple">Edit
+														Catalog Product</a> </h4>
+											</li>
 
 
 
-											<li> <h4> <a href="#multiSelling" data-toggle="tab" class="legitRipple">Multi
-													Selling Channel</a> </h4></li>
+											<li>
+												<h4> <a href="#multiSelling" data-toggle="tab" class="legitRipple">Multi
+														Selling Channel</a> </h4>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -1266,7 +1267,8 @@ left: 0;
 																	<li><a href="#"> Alfacart</a></li>
 																	<li><a href="#"> b2b</a></li>
 																	<li><a href="#"> Alafapop</a></li>
-																	<li><a href="#"> Alfamikro</a></li>
+																	<li><a href="Alfamikro_multiselling.html"
+																			target="_blank"> Alfamikro</a></li>
 																	<li><a href="#"> Alfamind</a></li>
 
 																	<li><a href="#"> Alfagift</a></li>
@@ -1302,7 +1304,7 @@ left: 0;
 														<div class="tab-pane active" id="channelAlfamikro">
 															<div class="row">
 																<div class="col-xs-6">
-																	<h5>Category Product</h5>
+																	<h5> Multiple Category</h5>
 																</div>
 																<div class="col-xs-6 text-right"><span
 																		class="text-danger text-bold">Reset</span>
@@ -1720,12 +1722,15 @@ left: 0;
 																												class="row">
 																												<div
 																													class="col-xs-12 text-right">
-																													<button
-																														type="button"
-																														class="btn btn-primary"><i
-																															class="icon-plus-circle2 position-left"></i>
-																														Add
-																														New</button>
+
+																													<a href="add-new-inventory-group.html"
+																														target="_blanl">
+																														<button
+																															type="button"
+																															class="btn btn-primary"><i
+																																class="icon-plus-circle2 position-left"></i>
+																															Add
+																															New</button></a>
 																												</div>
 																												<div
 																													class="col-xs-12 pt-20">
@@ -2173,12 +2178,14 @@ left: 0;
 
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-harga-jual.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button></a>
 																											</div>
 
 
@@ -2312,7 +2319,7 @@ left: 0;
 																																		class="control-label col-xs-2 pt-10">Start
 																																	</label>
 																																	<div
-																																		class="col-xs-4">
+																																		class="col-xs-5">
 																																		<div
 																																			class="input-group">
 
@@ -2333,7 +2340,7 @@ left: 0;
 																																		class="control-label col-xs-2 pt-10">End
 																																	</label>
 																																	<div
-																																		class="col-xs-4">
+																																		class="col-xs-5">
 																																		<div
 																																			class="input-group">
 
@@ -2448,6 +2455,11 @@ left: 0;
 																												</table>
 																											</div>
 
+
+
+																											<div class="col-xs-12 my-30 text-right">
+<button class="btn btn-primary" data-target="#modal_showmore" data-toggle="modal"> Show More</button>
+																											</div>
 																											<!-- ------------------------------ ---- -->
 																										</div>
 																									</div>
@@ -2464,12 +2476,15 @@ left: 0;
 																											class="panel-body">
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-harga-jual-group.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button>
+																												</a>
 																											</div>
 																											<div
 																												class="col-xs-12 pt-20">
@@ -2551,12 +2566,15 @@ left: 0;
 																											class="panel-body">
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-hemat-promo.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button>
+																												</a>
 																											</div>
 																											<div
 																												class="col-xs-12 pt-20">
@@ -2632,12 +2650,15 @@ left: 0;
 																											class="panel-body">
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-hemat-promo-group.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button>
+																												</a>
 																											</div>
 																											<div
 																												class="col-xs-12 mt-20">
@@ -2718,12 +2739,15 @@ left: 0;
 																											class="panel-body">
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-range-price.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button>
+																												</a>
 																											</div>
 
 																											<div
@@ -2807,12 +2831,15 @@ left: 0;
 																											class="panel-body">
 																											<div
 																												class="col-xs-12 text-right">
-																												<button
-																													type="button"
-																													class="btn btn-primary legitRipple"><i
-																														class="icon-plus-circle2 position-left"></i>
-																													Add
-																													New</button>
+																												<a href="add-new-range-price-group.html"
+																													target="_blank">
+																													<button
+																														type="button"
+																														class="btn btn-primary legitRipple"><i
+																															class="icon-plus-circle2 position-left"></i>
+																														Add
+																														New</button>
+																												</a>
 																											</div>
 
 																											<div
@@ -2845,7 +2872,9 @@ left: 0;
 																													</thead>
 																													<tbody>
 																														<tr>
-																															<td rowspan="2"> ALL
+																															<td
+																																rowspan="2">
+																																ALL
 																															</td>
 																															<td>
 																															</td>
@@ -2860,7 +2889,7 @@ left: 0;
 																															</td>
 																														</tr>
 																														<tr>
-																														
+
 																															<td>
 																															</td>
 																															<td>
@@ -2907,7 +2936,9 @@ left: 0;
 
 																					<li><a href="#"> b2b</a></li>
 																					<li><a href="#"> Alafapop</a></li>
-																					<li><a href="#"> Alfamikro</a></li>
+																					<li><a href="Alfamikro_multiselling.html"
+																							target="_blank">
+																							Alfamikro</a></li>
 																					<li><a href="#"> Alfamind</a></li>
 
 																					<li><a href="#"> Alfagift</a></li>
@@ -2932,9 +2963,6 @@ left: 0;
 
 												</div>
 											</div>
-
-
-
 
 
 
@@ -3017,38 +3045,323 @@ left: 0;
 	</div>
 
 
-
 	<!-- Large modal -->
 	<div id="modal_active_branch" class="modal fade">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
+		<div class="modal-dialog m-auto100px ">
+			<div class="modal-content modal-custom">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h5 class="modal-title">Large modal</h5>
+					<button type="button" class="close btn-close" data-dismiss="modal" style="margin: -70px -20px 0 0;
+					 ">&times;</button>
+					<h2 class="modal-title">View Active Branch Group</h2>
 				</div>
 
 				<div class="modal-body">
-					<h6 class="text-semibold">Text in a modal</h6>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem. Praesent
-						commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-						laoreet rutrum faucibus dolor auctor.</p>
+					<div class="row mb-20">
+						<div class="col-xs-3   ">
+							Branch Jawa
+						</div>
+						<div class="col-xs-9 ">
 
-					<hr>
+							<div class="row">
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox"> KZ01-JABODETABEK
+									</label>
+								</div>
 
-					<h6 class="text-semibold">Another paragraph</h6>
-					<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel
-						augue laoreet rutrum faucibus dolor auctor.</p>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-3   ">
+							Branch Jawa
+						</div>
+						<div class="col-xs-9 ">
+
+							<div class="row">
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox"> KZ01-JABODETABEK
+									</label>
+								</div>
+
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+								<div class="col-xs-6 mb-20">
+									<label class="checkbox-inline">
+										<input type="checkbox">KZ02- JAWA BARAT
+									</label>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
 				</div>
 
 				<div class="modal-footer">
-					<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<div class="row text-center">
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
+	<div id="modal_showmore" class="modal fade">
+			<div class="modal-dialog m-auto100px modal-lg ">
+				<div class="modal-content modal-custom">
+					<div class="modal-header">
+						<button type="button" class="close btn-close" data-dismiss="modal" style="margin: -70px -20px 0 0;
+						 ">&times;</button>
+
+					</div>
+	
+					<div class="modal-body">
+					<div class="row">
+							<div
+							class="col-xs-12 pt-20">
+							<table
+								class="table table-bordered">
+								<thead>
+									<tr
+										class="gray">
+
+										<th>Branch Group</th>
+										<th>Tanggal
+										</th>
+										<th> Harga
+										</th>
+										<th> Deviasi
+										</th>
+
+										<th>
+											Action
+										</th>
+									</tr>
+
+
+								</thead>
+
+								<tbody>
+
+									<tr>
+											<td
+											class="no-padding-top">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="">
+										</td>
+										<td>
+											<div
+												class="form-group">
+												<label
+													class="control-label col-xs-4 pt-10">Start
+												</label>
+												<div
+													class="col-xs-8">
+													<div
+														class="input-group">
+
+														<input
+															type="text"
+															class="form-control daterange-single"
+															value="03/18/2013">
+														<span
+															class="input-group-addon"><i
+																class="icon-calendar22"></i></span>
+													</div>
+												</div>
+											</div>
+
+											<div
+												class="form-group">
+												<label
+													class="control-label col-xs-4 pt-10">End
+												</label>
+												<div
+													class="col-xs-8">
+													<div
+														class="input-group">
+
+														<input
+															type="text"
+															class="form-control daterange-single"
+															value="03/18/2013">
+														<span
+															class="input-group-addon"><i
+																class="icon-calendar22"></i></span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td
+											class="no-padding-top">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="">
+										</td>
+
+										<td
+											class="no-padding-top">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="">
+										</td>
+
+										<td> <button
+												class="btn btn-primary">
+												<i
+													class="glyphicon glyphicon-search"></i>
+												Search</button>
+										</td>
+
+
+
+									</tr>
+								</tbody>
+							</table>
+
+
+						</div>
+					</div>
+
+					<div class="row my-30">
+<div class="col-xs-12">
+		<table
+								class="table datatable-tipe-toko table-bordered">
+								<thead>
+									<tr
+										class="gray">
+
+										<th> Branch Group</th>
+										<th>Tanggal
+										</th>
+										<th> Harga
+										</th>
+										<th> Deviasi
+										</th>
+									</tr>
+
+
+								</thead>
+								<tbody>
+
+
+									<tr>
+										<td>Jabodetabek</td>
+										<td>
+										</td>
+
+
+										<td>
+
+										</td>
+
+										<td> <span
+												class="text-danger">
+												<i
+													class="glyphicon glyphicon-arrow-up"></i></span>
+
+											<span>Rp.
+												150000</span>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>
+												<td></td>
+										</td>
+										<td>
+											<span
+												class="text-success">
+												<i
+													class="glyphicon glyphicon-arrow-down"></i></span>
+
+											<span>Rp.
+												150000</span>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td></td>
+										<td>
+										</td>
+										<td> <span
+												class="text-danger">
+												<i
+													class="glyphicon glyphicon-arrow-up"></i></span>
+
+											<span>Rp.
+												150000</span>
+
+										</td>
+									</tr>
+
+
+
+								</tbody>
+							</table>
+</div>
+					</div>
+					</div>
+	
+
+				</div>
+			</div>
+		</div>
 	<!-- /large modal -->
 
 
@@ -3128,13 +3441,14 @@ left: 0;
 
 		$('#dropzone_multiple1').dropzone();
 		$('#dropzone_multiple2').dropzone();
-		$(document).ready(function () {
-			$('#editor1').summernote();
-			$('#editor2').summernote();
-		});
+
+
+		$('#editor1').summernote();
+		$('#editor2').summernote();
+
 	</script>
 </body>
 
 
 
-</html>git
+</html>

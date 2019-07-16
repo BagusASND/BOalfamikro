@@ -31,6 +31,19 @@
     <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/anytime.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
 
     <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/notifications/pnotify.min.js"></script>
@@ -525,6 +538,8 @@
                     <div class="panel panel-flat p-40">
 
 
+
+
                         <div class="row ">
 
 
@@ -532,7 +547,7 @@
 
                                 <h2>
                                     <span>
-                                        <i class="icon-arrow-left8 "></i> </span> <span> Tambah Inventory Group</span>
+                                        <i class="icon-arrow-left8 "></i> </span> <span> Tambah Range Price </span>
                                 </h2>
 
 
@@ -545,101 +560,317 @@
 
 
 
-                        <div class="row main-layout my-30">
-                            <div class="col-xs-12">
+                        <div class="row main-layout p-40">
+                            <div class="row">
 
 
 
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <div class="form-horizontal">
 
-                                <div class="panel-body">
-                                    <div class="form-horizontal">
-                                        <fieldset>
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Customer Group</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Min
-                                                    Qty
-                                                    Allowed
-                                                    Shopping
-                                                    Cart</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
-                                                </div>
-                                                <div class="col-xs-2">
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox">
-                                                        Unlimited
+
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-xs-2 pt-10">
+                                                        Start Date
                                                     </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Max
-                                                    Allowed
-                                                    Shopping
-                                                    Cart</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
-                                                </div>
-                                                <div class="col-xs-2">
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox">
-                                                        Unlimited
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Max Qty per-Customer
-                                                    per-day</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Increment
+                                                    <div class="col-xs-2">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i
+                                                                    class="icon-calendar22"></i></span>
+                                                            <input type="text" class="form-control daterange-single"
+                                                                value="03/18/2013">
+                                                        </div>
+                                                    </div>
 
-                                                    Qty
-                                                    in Shopping
-                                                    Cart</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
-                                                </div>
-                                            </div>
+                                                        <div class="col-xs-2">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                                                <input type="text" class="form-control daterange-single" value="03/18/2013">
+                                                            </div>
+                                                        </div>
 
 
-                                            <div class="form-group">
-                                                <label class="control-label col-xs-3">Increment
 
-                                                    Pack
+                                                </div>
 
-                                                    Qty
-                                                    in
-                                                    Cart</label>
-                                                <div class="col-xs-2">
-                                                    <input type="number" class="form-control" value="1234">
+                                                <div class="form-group mt-20">
+                                                    <label class="col-xs-2 control-label">
+                                                        PPN </label>
+                                                    <div class="col-xs-2">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="codOpt" checked="checked">
+                                                            Yes
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="codOpt">
+                                                            No
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="form-group mt-20">
+                                                    <label class="control-label col-xs-2">Harga Default</label>
+                                                    <div class="col-xs-3">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                        <div class="row my-30 ">
-                                            <div class="col-xs-2 col-xs-offset-10">
-
-                                                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal_save">SIMPAN</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="row">
+                                                <div class=" col-xs-offset-6 col-xs-6">
+                                                    <button class="btn btn-block btn-primary"> Edit</button>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
+
+
+                            <div class="row">
+                                <div class="col-xs-offset-8 col-xs-2">
+                                    <button class="btn btn-block btn-danger"> Hapus</button>
+                                </div>
+
+                                <div class="col-xs-2">
+                                    <button class="btn btn-block btn-primary"> Review</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 scroll">
+
+                                    <h4> Filter</h4>
+
+
+                                    <table class="table datatable-tipe-toko table-bordered w-150    ">
+                                        <thead>
+                                            <tr class="gray">
+                                                <th>Branch
+                                                    Group
+                                                </th>
+                                                <th colspan="2"> Max COGS (Rp)
+                                                </th>
+                                                <th colspan="2"> Harga
+                                                    Jual (Rp)
+                                                </th>
+
+                                                <th colspan="2">
+
+                                                    Deviasi (Rp)
+                                                </th>
+                                                <th colspan="2"> Max Gross Margin (%)
+                                                </th>
+
+                                                <th> Status
+                                                </th>
+
+
+                                                <th> Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </td>
+                                                <td> <input type="text" class="form-control" placeholder="From.." />
+                                                </td>
+                                                <td><input type="text" class="form-control" placeholder="To.." />
+                                                </td>
+                                                <td> <input type="text" class="form-control" placeholder="From.." />
+                                                </td>
+                                                <td><input type="text" class="form-control" placeholder="To.." />
+                                                </td>
+                                                <td> <input type="text" class="form-control" placeholder="From.." />
+                                                </td>
+                                                <td><input type="text" class="form-control" placeholder="To.." />
+                                                </td>
+                                                <td> <input type="text" class="form-control" placeholder="From.." />
+                                                </td>
+                                                <td><input type="text" class="form-control" placeholder="To.." />
+                                                </td>
+
+                                                <td><select class="form-control">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </td>
+                                                <td>
+
+                                                    <ul class=" col-xs-8 " style="list-style-type:none;">
+
+
+                                                        <li>
+
+                                                            <button class="btn btn-primary ">
+                                                                <i class="glyphicon glyphicon-search"></i>
+                                                                Search</button>
+
+                                                        </li>
+
+                                                        <li class="mt-10">
+                                                        <li>
+
+                                                            <button class="btn btn-primary ">
+
+                                                                Reset</button>
+
+
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row mt-20">
+                                <div class="col-xs-12 scroll">
+
+                                    <h4> Harga Detail</h4>
+
+
+                                    <table class="table datatable-tipe-toko  w-150    ">
+                                        <thead>
+                                            <tr class="gray">
+
+                                                <th> </th>
+                                                <th>Branch
+                                                    Group
+                                                </th>
+                                                <th> Costumer Group
+                                                </th>
+                                                <th>
+                                                    Max COGS (Rp)
+                                                </th>
+                                                <th>
+                                                    Harga Jual (Rp)
+                                                </th>
+
+                                                <th>
+
+                                                    Deviasi (Rp)
+                                                </th>
+                                                <th> Max Gross Margin (%)
+                                                </th>
+
+                                                <th> Status
+                                                </th>
+
+
+                                                <th> Action
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-xs-10">
+                                                            <select class="form-control">
+                                                                <option value="AMA MM">
+                                                                    Jabodetabek
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-xs-2 pt-10">
+                                                            <i class="glyphicon glyphicon-pencil"></i>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </td>
+                                                <td> <select class="form-control">
+                                                    <option value="AMA MM">
+                                                        AMA-MM
+                                                    </option>
+                                                </select></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td> <select class="form-control">
+                                                    <option value="AMA MM">
+                                                Active
+                                                    </option>
+                                                </select></td>
+                                                <td><i class="icon-plus-circle2 mr-10px"></i> <i class="icon-minus-circle2"></i></td>
+                                            </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox">
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-xs-10">
+                                                        <select class="form-control">
+                                                            <option value="AMA MM">
+                                                                Jabodetabek
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-2 pt-10">
+                                                        <i class="glyphicon glyphicon-pencil"></i>
+                                                    </div>
+                                                </div>
+                                        
+                                        
+                                        
+                                        
+                                            </td>
+                                            <td> <select class="form-control">
+                                                <option value="AMA MM">
+                                                    REG-R2
+                                                </option>
+                                            </select></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> <select class="form-control">
+                                                    <option value="AMA MM">
+                                                        Active
+                                                    </option>
+                                                </select></td>
+                                            <td><i class="icon-plus-circle2 mr-10px"></i> <i class="icon-minus-circle2"></i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row my-30">
+                                    <div class="col-xs-2 col-xs-offset-10">
+                                        <button class="btn btn-primary btn-block" data-toggle="modal"
+                                            data-target="#modal_save"> Save</button>
+                                    </div>
+                                </div>
                         </div>
 
-
-
                     </div>
-
-
 
                 </div>
 
@@ -656,36 +887,6 @@
     <!-- /page container -->
 
 
-<!-- Large modal -->
-<div id="modal_save" class="modal fade">
-    <div class="modal-dialog m-auto100px modal-sm ">
-        <div class="modal-content modal-custom">
-            <div class="modal-body text-center">
-
-                <span  > <i class="icon-notification2 icon-danger "></i></span>
-               <h1 class="text-danger">Apakah anda yakin?</h1>
-
-
-            </div>
-
-            <div class="modal-footer">
-                <div class="row text-center">
-
-                        <div class="col-xs-4 col-xs-offset-2">
-<button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Ya </button>
-                        </div>
-                        <div class="col-xs-4">
-<button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Tidak </button>
-                        </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /large modal -->
 
 
 

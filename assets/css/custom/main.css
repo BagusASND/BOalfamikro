@@ -1,82 +1,109 @@
-.p-40{
-padding: 40px 40px 40px 40px;
+.p-40 {
+  padding: 40px 40px 40px 40px;
 }
 
-
-.px-40{
-padding: 0 40px 0 40px;
+.px-40 {
+  padding: 0 40px 0 40px;
 }
 
-
-
-.m-0{
-    margin: 0px !important;
+.m-auto100px {
+  margin: 100px auto !important;
+}
+.mr-10px {
+  margin-right: 10px;
+}
+.m-0 {
+  margin: 0px !important;
 }
 
-.mr-30{
-    margin-right: 30px;
-
-}
-.m-40{
-    margin: 40px 40px 40px 40px;
-}
-.pt-10{
-
-    padding-top: 10px;;
+.mr-30 {
+  margin-right: 30px;
 }
 
-.mt-10{
-    margin-top: 10px;
+.my-30 {
+  margin: 30px 0 30px 0 !important;
+}
+.m-40 {
+  margin: 40px 40px 40px 40px;
+}
+.pt-10 {
+  padding-top: 10px;
 }
 
-.mt-20{
-    margin-top: 20px;
-}
-.main-layout{
-    box-shadow: 0px 1px 2px 1px #dddd;
-    margin: 0px 40px 40px 40px;
-    padding: 40px 40px 40px 40px;
+.mt-10 {
+  margin-top: 10px;
 }
 
-.header-sticky{
-    position: sticky !important;
-    top:0 !important;
-    background:white !important;
-    z-index: 3   !important;
+.mt-20 {
+  margin-top: 20px;
 }
 
-
-.scroll{
-    overflow: scroll !important;
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.main-layout {
+  box-shadow: 0px 1px 2px 1px #dddd;
+  margin: 40px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
 }
 
-.w-150{
-width: 150% !important;
+.header-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  background: white !important;
+  z-index: 501 !important;
 }
 
-.gray{
-    background-color: #EEEEEE !important;
+.scroll {
+  overflow: auto !important;
 }
 
-
-.pt-10{
-    padding-top: 10px !important;
-}
-
-table, th, tr {
-    text-align: center !important;
-}
-
-
-.primary-tab .nav-tabs li.active a::after{
-    content: "";
-    color: red !important;
-    border: none;
+.w-150 {
+  width: 150% !important;
+  max-width: 150% !important;
 
 }
 
-.title{
-    line-height: 2.5;
-    margin: 0;
-    font-size: 20px;
+.gray {
+  background-color: #eeeeee !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+table,
+th,
+tr {
+  text-align: center !important;
+}
+
+.primary-tab .nav-tabs li.active a::after {
+  content: "";
+  color: red !important;
+  border: none;
+}
+
+.title {
+  line-height: 2.5;
+  margin: 0;
+  font-size: 20px;
+}
+.modal-custom {
+  border-radius: 10px !important;
+}
+.btn-close,
+.btn-close:hover {
+  font-size: 30px !important;
+
+  color: white;
+  padding: 2px 11px 4px 11px !important;
+  border-radius: 100%;
+  border: 2px solid white !important;
+}
+
+.icon-danger {
+  font-size: 160px;
+  color: #f44336;
+  font-weight: bold;
 }
