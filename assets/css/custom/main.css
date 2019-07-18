@@ -23,6 +23,10 @@
 .my-30 {
   margin: 30px 0 30px 0 !important;
 }
+
+.mx-30{
+  margin: 0 30px 0 30px !important;
+}
 .m-40 {
   margin: 40px 40px 40px 40px;
 }
@@ -106,4 +110,23 @@ tr {
   font-size: 160px;
   color: #f44336;
   font-weight: bold;
+}
+.btn-primary{
+  background: #005CA8 !important;
+}
+.btn-danger{
+  background: white !important;
+  color: #ED1C23 !important;
+  border: solid 2px #ED1C23 !important;
+}
+.primary-tab .nav-tabs li.active a {
+  color: #005CA8 !important;
+
+}
+
+.nav-tabs.nav-justified > .active > a {
+  background: #005CA8 !important;
+}
+.primary-color {
+  color: #005CA8 !important;
 }
